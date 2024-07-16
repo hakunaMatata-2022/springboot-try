@@ -17,4 +17,10 @@ public class FilmController {
     public String toDetail(@PathVariable("type") String type, @PathVariable("path") String path) {
         return type + "/" + path;
     }
+
+    // 向用户登录页面跳转
+    @GetMapping("/userLogin")
+    public String toLoginPage() {
+        return "login/login";
+    }
 }
